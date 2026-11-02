@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 
 plugins=(
   # Core
@@ -39,6 +39,7 @@ plugins=(
 )
 
 source "$ZSH/oh-my-zsh.sh"
+eval "$(starship init zsh)"
 
 # Flatpak VSCodium
 alias codium='flatpak run com.vscodium.codium'

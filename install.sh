@@ -84,6 +84,49 @@ packages=(
 printf 'Installing Fedora terminal packages...\n'
 run "${package_manager[@]}" install -y "${packages[@]}"
 
+install_starship() {
+  local version=1.27.0
+  local target checksum
+
+  case "$(uname -m)" in
+    x86_64)
+      target=x86_64-unknown-linux-gnu
+      checksum=3b94758850901717eb36aa1b53f8492c1322506ec6d41273bc6151e79ed8e4a1
+      ;;
+    aarch64)
+      target=aarch64-unknown-linux-musl
+      checksum=341f5cbf24699fa0b27ec88965ad25f862ea09e15d35a543fd6ffdff1d2aa00d
+      ;;
+    *)
+      printf 'Starship is not configured for architecture: %s\n' "$(uname -m)" >&2
+      exit 1
+      ;;
+  esac
+
+  local archive_name="starship-$target.tar.gz"
+  local url="https://github.com/starship/starship/releases/download/v$version/$archive_name"
+
+  printf 'Installing Starship %s...\n' "$version"
+  if "$dry_run"; then
+    printf ' + download and verify %s\n' "$url"
+    printf ' + install starship to %q\n' "$HOME/.local/bin/starship"
+    return
+  fi
+
+  local archive binary
+  archive=$(mktemp)
+  binary=$(mktemp)
+  trap 'rm -f -- "$archive" "$binary"' RETURN
+
+  curl -fsSL "$url" -o "$archive"
+  printf '%s  %s\n' "$checksum" "$archive" | sha256sum --check --status
+  tar -xOf "$archive" starship >"$binary"
+  install -d "$HOME/.local/bin"
+  install -m 0755 "$binary" "$HOME/.local/bin/starship"
+}
+
+install_starship
+
 zsh_dir=${ZSH:-"$HOME/.oh-my-zsh"}
 if [[ -d "$zsh_dir/.git" ]]; then
   printf 'Updating Oh My Zsh...\n'

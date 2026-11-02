@@ -6,11 +6,13 @@ Personal Fedora terminal configuration and an archived Raspberry Pi network conf
 
 The installer configures the current user with:
 
-- Zsh and Oh My Zsh using the `robbyrussell` theme
+- Zsh and Oh My Zsh with the Starship prompt
 - Fedora packages for Git, `fzf`, `zoxide`, `direnv`, `bat`, `eza`, man pages, SSH, `rsync`, command lookup, and clipboard integration
 - `fzf-tab`, `zsh-autosuggestions`, and `zsh-syntax-highlighting`
 - Oh My Zsh's bundled Git, Fedora, systemd, Docker, rsync, SSH agent, navigation, and convenience plugins
 - `cat` mapped to `bat` and `ls` mapped to `eza`
+
+Starship is installed from its official release archive into `~/.local/bin`. The installer pins a tested release and verifies its SHA-256 checksum before replacing the binary.
 
 Review the planned commands:
 
