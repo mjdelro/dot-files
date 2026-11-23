@@ -1,4 +1,18 @@
-# Dot files
+<p align="center">
+  <img src="assets/icon.svg" alt="Dot Files Icon" width="104" height="104" />
+</p>
+
+<h1 align="center">Dot Files</h1>
+
+<p align="center">Personal Fedora terminal configuration and archived Raspberry Pi network configs.</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Shell-Zsh%20%2F%20Bash-34d399?style=flat-square&logo=gnubash&logoColor=black" alt="" />
+  <img src="https://img.shields.io/badge/Fedora-Linux-51A2DA?style=flat-square&logo=fedora&logoColor=white" alt="" />
+  <img src="https://img.shields.io/github/license/mjdelro/dot-files?style=flat-square&color=64748b" alt="" />
+</p>
+
+---
 
 Personal Fedora terminal configuration and an archived Raspberry Pi network configuration.
 
