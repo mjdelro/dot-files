@@ -1,0 +1,34 @@
+/* Warm Coal (Dark) overrides for GTK3 apps */
+
+@define-color theme_bg_color #1c1d20;
+@define-color theme_fg_color #dcdad5;
+@define-color theme_base_color #17181b;
+@define-color theme_text_color #dcdad5;
+@define-color theme_selected_bg_color #347a45;
+@define-color theme_selected_fg_color #ffffff;
+
+@define-color insensitive_bg_color #1c1d20;
+@define-color insensitive_fg_color #8a8d94;
+@define-color insensitive_base_color #17181b;
+
+@define-color theme_unfocused_bg_color #1c1d20;
+@define-color theme_unfocused_fg_color #c8c6c1;
+@define-color theme_unfocused_base_color #17181b;
+@define-color theme_unfocused_text_color #c8c6c1;
+
+@define-color headerbar_bg_color #212327;
+@define-color headerbar_fg_color #dcdad5;
+@define-color popover_bg_color #24262a;
+@define-color popover_fg_color #dcdad5;
+@define-color card_bg_color #24262a;
+@define-color card_fg_color #dcdad5;
+
+@define-color accent_bg_color #347a45;
+@define-color accent_fg_color #ffffff;
+@define-color accent_color #6bb38a;
+
+@define-color error_color #d46e6e;
+@define-color warning_color #d4b05c;
+@define-color success_color #6bb38a;
+@define-color destructive_bg_color #a84848;
+@define-color destructive_fg_color #ffffff;

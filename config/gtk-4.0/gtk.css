@@ -1,0 +1,109 @@
+/* Warm Coal (Dark) & Warm Paper (Light) for GTK4 / libadwaita 1.10+
+ * Automatically follows GNOME's Dark / Light system color-scheme toggle.
+ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --window-bg-color: #1c1d20;
+    --window-fg-color: #dcdad5;
+
+    --view-bg-color: #17181b;
+    --view-fg-color: #dcdad5;
+
+    --headerbar-bg-color: #212327;
+    --headerbar-fg-color: #dcdad5;
+    --headerbar-backdrop-color: #1c1d20;
+
+    --sidebar-bg-color: #212327;
+    --sidebar-fg-color: #dcdad5;
+    --sidebar-backdrop-color: #1c1d20;
+
+    --secondary-sidebar-bg-color: #1f2125;
+    --secondary-sidebar-fg-color: #dcdad5;
+
+    --card-bg-color: rgba(255, 252, 245, 0.055);
+    --card-fg-color: #dcdad5;
+
+    --dialog-bg-color: #24262a;
+    --dialog-fg-color: #dcdad5;
+
+    --popover-bg-color: #24262a;
+    --popover-fg-color: #dcdad5;
+
+    --thumbnail-bg-color: #24262a;
+    --thumbnail-fg-color: #dcdad5;
+
+    --accent-bg-color: #347a45;
+    --accent-fg-color: #ffffff;
+    --accent-color: #6bb38a;
+
+    --destructive-bg-color: #a84848;
+    --destructive-fg-color: #ffffff;
+    --destructive-color: #d46e6e;
+
+    --error-bg-color: #a84848;
+    --error-fg-color: #ffffff;
+    --error-color: #d46e6e;
+
+    --warning-bg-color: #b58d3d;
+    --warning-fg-color: #1c1d20;
+    --warning-color: #d4b05c;
+
+    --success-bg-color: #347a45;
+    --success-fg-color: #ffffff;
+    --success-color: #6bb38a;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --window-bg-color: #f6f2e9;
+    --window-fg-color: #232528;
+
+    --view-bg-color: #fbf9f4;
+    --view-fg-color: #232528;
+
+    --headerbar-bg-color: #efe9dc;
+    --headerbar-fg-color: #232528;
+    --headerbar-backdrop-color: #f6f2e9;
+
+    --sidebar-bg-color: #efe9dc;
+    --sidebar-fg-color: #232528;
+    --sidebar-backdrop-color: #f6f2e9;
+
+    --secondary-sidebar-bg-color: #f2ede2;
+    --secondary-sidebar-fg-color: #232528;
+
+    --card-bg-color: #fbf9f4;
+    --card-fg-color: #232528;
+
+    --dialog-bg-color: #fbf9f4;
+    --dialog-fg-color: #232528;
+
+    --popover-bg-color: #fbf9f4;
+    --popover-fg-color: #232528;
+
+    --thumbnail-bg-color: #fbf9f4;
+    --thumbnail-fg-color: #232528;
+
+    --accent-bg-color: #347a45;
+    --accent-fg-color: #ffffff;
+    --accent-color: #245b32;
+
+    --destructive-bg-color: #a8383b;
+    --destructive-fg-color: #ffffff;
+    --destructive-color: #a8383b;
+
+    --error-bg-color: #a8383b;
+    --error-fg-color: #ffffff;
+    --error-color: #a8383b;
+
+    --warning-bg-color: #9a6b14;
+    --warning-fg-color: #ffffff;
+    --warning-color: #8a5e0d;
+
+    --success-bg-color: #347a45;
+    --success-fg-color: #ffffff;
+    --success-color: #245b32;
+  }
+}

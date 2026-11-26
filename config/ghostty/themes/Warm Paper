@@ -1,0 +1,24 @@
+# Warm Paper — Daytime Positive Polarity (fg 13.75:1, all accents 5.2:1-8.4:1)
+background = #f6f2e9
+foreground = #232528
+cursor-color = #232528
+cursor-text = #f6f2e9
+selection-background = #dfd8c8
+selection-foreground = #1a1c1e
+
+palette = 0=#3a3d42
+palette = 1=#a8383b
+palette = 2=#266e49
+palette = 3=#855e0a
+palette = 4=#265c99
+palette = 5=#7c3f8c
+palette = 6=#1d6b75
+palette = 7=#5c5952
+palette = 8=#66635c
+palette = 9=#8f282b
+palette = 10=#1c5939
+palette = 11=#6e4c06
+palette = 12=#1d4a7d
+palette = 13=#653073
+palette = 14=#14565e
+palette = 15=#1a1c1e

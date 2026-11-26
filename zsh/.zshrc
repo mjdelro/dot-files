@@ -1,5 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/bin:$PATH"
+case ":$PATH:" in
+    *":$HOME/.local/bin:"*) ;;
+    *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
 
 ZSH_THEME=""
 
@@ -43,7 +46,7 @@ eval "$(starship init zsh)"
 
 # Flatpak VSCodium
 alias codium='flatpak run com.vscodium.codium'
-
-# Modern replacements; use `command cat` or `command ls` for the originals.
 alias cat='bat'
-alias ls='eza'
+alias ls='eza --icons=auto --group-directories-first'
+alias ll='eza -la --icons=auto --git --group-directories-first'
+alias lt='eza --tree --level=2 --icons=auto'

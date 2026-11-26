@@ -1,0 +1,30 @@
+# Typography
+font-family = IntoneMono Nerd Font
+font-size = 11
+
+# Theme & GNOME / GTK4 integration
+theme = dark:Warm Coal,light:Warm Paper
+window-theme = ghostty
+gtk-titlebar-style = tabs
+gtk-wide-tabs = false
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+window-save-state = always
+resize-overlay = never
+
+# Performance & startup (Linux / GTK4)
+gtk-single-instance = true
+quit-after-last-window-closed = true
+quit-after-last-window-closed-delay = 5m
+
+# Shell integration (fixes xterm-ghostty errors over SSH and sudo)
+shell-integration = detect
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo,path
+
+# Ergonomics
+mouse-hide-while-typing = true
+unfocused-split-opacity = 0.85
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 10s

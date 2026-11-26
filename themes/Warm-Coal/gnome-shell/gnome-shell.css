@@ -1,0 +1,75 @@
+/* Warm Coal theme for GNOME Shell 51+
+ * Inherits the built-in GNOME Shell dark stylesheet and tunes surfaces,
+ * text, and accents to match Warm Coal (#1c1d20 / #dcdad5 / #347a45).
+ */
+@import url("resource:///org/gnome/shell/theme/gnome-shell-dark.css");
+
+stage {
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+/* Top bar */
+#panel {
+  background-color: #17181b;
+  color: #dcdad5;
+}
+
+#panel .panel-button {
+  color: #dcdad5;
+}
+
+/* Popovers, Quick Settings, Calendar & Notifications */
+.popup-menu-content,
+.quick-settings,
+.osd-window,
+.modal-dialog,
+.switcher-list,
+.workspace-switcher {
+  background-color: #1c1d20;
+  color: #dcdad5;
+  border-color: rgba(220, 218, 213, 0.12);
+}
+
+.quick-toggle,
+.quick-menu-toggle .quick-toggle,
+.quick-menu-toggle .quick-toggle-arrow,
+.message,
+.notification-banner,
+.calendar-day-base,
+.world-clocks-button,
+.weather-button,
+.events-button {
+  background-color: #24262a;
+  color: #dcdad5;
+}
+
+.quick-toggle:checked,
+.quick-menu-toggle .quick-toggle:checked,
+.quick-menu-toggle .quick-toggle-arrow:checked,
+.calendar-today {
+  background-color: #347a45;
+  color: #ffffff;
+}
+
+.quick-toggle:checked:hover,
+.quick-menu-toggle .quick-toggle:checked:hover,
+.quick-menu-toggle .quick-toggle-arrow:checked:hover {
+  background-color: #3e8e52;
+}
+
+/* Overview search entry */
+.search-entry {
+  background-color: #24262a;
+  color: #dcdad5;
+  border-color: rgba(220, 218, 213, 0.14);
+}
+
+.search-entry:focus {
+  border-color: #6bb38a;
+}
+
+/* Dock / Dash */
+#dash .dash-background {
+  background-color: rgba(28, 29, 32, 0.92);
+  border-color: rgba(220, 218, 213, 0.1);
+}
